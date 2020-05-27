@@ -1,0 +1,25 @@
+main {
+  margin-bottom: 0;
+}
+.fa-arrow-left {
+  margin-right: 30px;
+}
+.setting_menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.setting_menu-column {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  font-weight: 300;
+}
+.setting_menu-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+}
+.setting_menu-item i {
+  margin-right: 20px;
+}
