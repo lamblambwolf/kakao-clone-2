@@ -80,9 +80,20 @@ main {
   margin-bottom: 80px;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgb(241, 241, 241), rgb(197, 197, 197));
+  background-image: linear-gradient(transparent, rgb(197, 197, 197)), url("LWFAnP0.jpg");
   flex: 1 1 auto;
   position: relative;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 .profile-self {
   padding: 10px 0px;
@@ -141,6 +152,9 @@ nav {
   bottom: 0px;
   border-top: 1px solid lightgray;
   background-color: rgb(241, 241, 241);
+    transform: translateY(80px);
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.5s;
 }
 nav a {
   color: gray;
@@ -148,3 +162,12 @@ nav a {
 a.active {
   color: black;
 }
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+
