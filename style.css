@@ -80,7 +80,7 @@ main {
   margin-bottom: 80px;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgb(241, 241, 241), rgb(197, 197, 197));
+  background-image: linear-gradient(transparent, rgb(197, 197, 197)), url("LWFAnP0.jpg");
   flex: 1 1 auto;
   position: relative;
 }
