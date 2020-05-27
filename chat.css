@@ -40,9 +40,20 @@ main {
     transform: none;
   }
 }
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
 .chat_message-incoming > img {
   margin-right: 10px;
+  animation: spin 1s linear infinite;
 }
+
 .chat_message-incoming-content {
   max-width: 60%;
   display: flex;
